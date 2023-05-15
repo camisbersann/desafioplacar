@@ -39,6 +39,16 @@ function adicionarB() {
     }
     if (ganhosB == 3) {
         document.getElementById("aparv").innerHTML = `<section id="vitorioso"><strong>Equipe B venceu!</strong></section>`
+        contB = 0
+        document.getElementById("valorB").innerHTML = contB
+        contA = 0
+        document.getElementById("valorA").innerHTML = contA
+    }
+    if (ganhosA == 3) {
+        contB = 0
+        contA = 0
+        document.getElementById("valorB").innerHTML = contB
+        document.getElementById("valorA").innerHTML = contA
     }
 }
 
@@ -88,12 +98,22 @@ function adicionarA() {
         contA = 0
         document.getElementById("valorA").innerHTML = contA
         ganhosA++
-        document.getElementById("setganhob").innerHTML = ganhosB
+        document.getElementById("setganhob").innerHTML = ganhosA
         i++
         sets++
     }
     if (ganhosA == 3) {
         document.getElementById("aparv").innerHTML = `<section id="vitorioso"><strong>Equipe A venceu!</strong></section>`
+        contB = 0
+        contA = 0
+        document.getElementById("valorB").innerHTML = contB
+        document.getElementById("valorA").innerHTML = contA
+    }
+    if (ganhosB == 3) {
+        contB = 0
+        contA = 0
+        document.getElementById("valorB").innerHTML = contB
+        document.getElementById("valorA").innerHTML = contA
     }
 }
 
@@ -110,3 +130,4 @@ function subtrairA() {
 
 var sets = 1
 var i = 1
+
