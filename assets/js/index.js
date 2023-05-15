@@ -38,7 +38,7 @@ function adicionarB() {
         sets++
     }
     if (ganhosB == 3) {
-        document.getElementById("aparv").innerHTML = `<section id="vitorioso"><strong>Equipe B venceu!</strong></section>`
+        document.getElementById("aparv").innerHTML = `<section id="vitorioso"><strong>Equipe B venceu!✔</strong></section>`
         contB = 0
         document.getElementById("valorB").innerHTML = contB
         contA = 0
@@ -103,7 +103,7 @@ function adicionarA() {
         sets++
     }
     if (ganhosA == 3) {
-        document.getElementById("aparv").innerHTML = `<section id="vitorioso"><strong>Equipe A venceu!</strong></section>`
+        document.getElementById("aparv").innerHTML = `<section id="vitorioso"><strong>Equipe A venceu!✔</strong></section>`
         contB = 0
         contA = 0
         document.getElementById("valorB").innerHTML = contB
