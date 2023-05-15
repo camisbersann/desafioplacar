@@ -1,6 +1,8 @@
 var contB = 0;
 var setB = [];
 var ganhosB = 0;
+var maxPoints = 10;
+var maxPointsEmpate = 5;
 
 function adicionarB() {
     if (contB != ganhar) {
@@ -22,7 +24,7 @@ function adicionarB() {
             document.getElementById("setganhob").innerHTML = ganhosB;
             i++;
             sets++;
-            ganhar = 25;
+            ganhar = maxPoints;
         }
         if (sets == 5 && contB == ganhar) {
             setA[sets] = contA;
@@ -47,7 +49,7 @@ function adicionarB() {
         contA = 0;
         document.getElementById("valorA").innerHTML = contA;
         document.getElementById("bloco2").style.backgroundImage = 'url(https://usagif.com/wp-content/uploads/firework-1.gif)';
-        document.getElementById("bloco2").style.color = 'white';
+        document.getElementById("bloco2").style.color = 'transparent';
     }
     if (ganhosA == 3) {
         contB = 0;
@@ -55,13 +57,13 @@ function adicionarB() {
         document.getElementById("valorB").innerHTML = contB;
         document.getElementById("valorA").innerHTML = contA;
         document.getElementById("bloco2").style.backgroundImage = 'url(https://usagif.com/wp-content/uploads/firework-1.gif)';
-        document.getElementById("bloco2").style.color = 'white';
+        document.getElementById("bloco2").style.color = 'transparent';
     }
     if(contA+contB == ganhar*2-2){
         ganhar++;
     }
     if(sets == 5 && i == 5) {
-        ganhar = 15;
+        ganhar = maxPointsEmpate;
         i++;
     }
 }
@@ -101,7 +103,7 @@ function adicionarA() {
             document.getElementById("setganhoa").innerHTML = ganhosA;
             i++;
             sets++;
-            ganhar = 25;
+            ganhar = maxPoints;
         }
         if (sets == 5 && contA == ganhar) {
             setA[sets] = contA;
@@ -126,7 +128,7 @@ function adicionarA() {
         document.getElementById("valorB").innerHTML = contB;
         document.getElementById("valorA").innerHTML = contA;
         document.getElementById("bloco2").style.backgroundImage = 'url(https://usagif.com/wp-content/uploads/firework-1.gif)';
-        document.getElementById("bloco2").style.color = 'white';
+        document.getElementById("bloco2").style.color = 'transparent';
     }
     if (ganhosB == 3) {
         contB = 0;
@@ -134,13 +136,13 @@ function adicionarA() {
         document.getElementById("valorB").innerHTML = contB;
         document.getElementById("valorA").innerHTML = contA;
         document.getElementById("bloco2").style.backgroundImage = 'url(https://usagif.com/wp-content/uploads/firework-1.gif)';
-        document.getElementById("bloco2").style.color = 'white';
+        document.getElementById("bloco2").style.color = 'transparent';
     }
     if(contA+contB == (ganhar*2)-2){
         ganhar++;
     }
     if(sets == 5 && i == 5) {
-        ganhar = 15;
+        ganhar = maxPointsEmpate;
         i++;
     }
 }
@@ -159,8 +161,8 @@ if(contA+contB == (ganhar*2)-2){
 }
 var sets = 1;
 var i = 1;
-var ganhar = 25;
+var ganhar = maxPoints;
 
 if(sets == 5 && i == 5) {
-    ganhar = 15;
+    ganhar = maxPointsEmpate;
 }
