@@ -2,6 +2,10 @@
     display:flex;
 }
 
+#flexi {
+    display:flex;
+}
+
 .cont1 {
     width:33%;
 }
