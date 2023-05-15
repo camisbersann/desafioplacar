@@ -1,11 +1,84 @@
 #flex1 {
     display:flex;
+    gap: 5vh;
+    margin-top: 5%;
 }
-
+body{
+    font-family: system-ui;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+h3{
+    margin-top: 45%;
+    font-size: 40px; 
+}
+#zero{
+    margin-top: 40%;
+    font-size: 60px;
+}
+.placar{
+    gap: 5px;
+}
 #flexi {
     display:flex;
+   margin-left: 40%;
+   font-size: 20px;
 }
-
+#a1{
+    background-color: black;
+    color: white;
+    width: 10%;
+    height: 7%;
+    margin-left: 40%;
+    margin-right: 1%;
+    border-radius: 5px;
+}
+#a2{
+    background-color: black;
+    color: white;
+    width: 10%;
+    height: 7%;
+    border-radius: 5px;
+}
+#b1{
+    background-color: black;
+    color: white;
+    width: 10%;
+    height: 7%;
+    margin-left: 40%;
+    margin-right: 1%;
+    border-radius: 5px;
+}
+#b2{
+    background-color: black;
+    color: white;
+    width: 10%;
+    height: 7%;
+   border-radius: 5px;
+}
 .cont1 {
     width:33%;
+    height: 75vh;
+}
+#bloco1{
+    border-radius:5% ;
+    background-color: rgb(146, 239, 239);
+}
+#bloco2{
+    background-color: #f5f5f5;
+    border-radius:5% ;
+}
+#bloco3{
+    border-radius:5% ;
+    background-color: rgb(253, 195, 88);
+}
+#vitorioso{
+    background-color: rgb(235, 243, 123);
+    padding: 10px;
 }
